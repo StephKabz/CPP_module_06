@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Base.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 18:38:00 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/16 16:17:31 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 13:44:12 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,19 +47,19 @@ void identify(Base &p)
 		(void)dynamic_cast<A&>(p);
 		std::cout << "A" << std::endl;
 	}
-	catch(const std::bad_cast& e){};
+	catch(...){};
 	try
 	{
 		(void)dynamic_cast<B&>(p);
 		std::cout << "B" << std::endl;
 	}
-	catch(const std::bad_cast& e){};
+	catch(...){};
 	try
 	{
 		(void)dynamic_cast<C&>(p);
 		std::cout << "C" << std::endl;
 	}
-	catch(const std::bad_cast& e){};
+	catch(...){};
 };
 
 Base::~Base(){};

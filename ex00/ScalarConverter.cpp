@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.cpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 14:59:29 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/11 15:44:39 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 12:40:45 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
+
 
 enum
 {
@@ -142,7 +143,7 @@ void ScalarConverter::convert(std::string const &argv)
     			std::cout << "char: Non displayable" << std::endl;
 			else
     			std::cout << "char: '" << static_cast<char>(value) << "'" << std::endl;
-			if (value < INT_MIN || value > INT_MAX)
+			if (value < static_cast<float>(INT_MIN) || value > static_cast<float>(INT_MAX))
 				std::cout << "int: impossible" << std::endl;
 			else
 				std::cout << "int: " << static_cast<int>(value) << std::endl;
@@ -169,7 +170,7 @@ void ScalarConverter::convert(std::string const &argv)
     			std::cout << "char: Non displayable" << std::endl;
 			else
     			std::cout << "char: '" << static_cast<char>(value) << "'" << std::endl;
-			if (value < INT_MIN || value > INT_MAX)
+			if (value < static_cast<double>(INT_MIN) || value > static_cast<double>(INT_MAX))
 				std::cout << "int: impossible" << std::endl;
 			else
 				std::cout << "int: " << static_cast<int>(value) << std::endl;
@@ -185,5 +186,5 @@ void ScalarConverter::convert(std::string const &argv)
 		std::cout << "double: impossible" << std::endl;
 		break;
 	}
-	std::cout << std::defaultfloat;
+	std::cout << std::resetiosflags(std::ios::floatfield);
 };

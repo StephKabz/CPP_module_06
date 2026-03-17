@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 14:55:38 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/10 19:42:45 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 12:30:17 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,5 @@ class ScalarConverter
 	public :
 		static void convert(std::string const &argv);
 };
-
-
 
 #endif

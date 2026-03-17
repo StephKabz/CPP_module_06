@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   B.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/13 15:55:59 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/13 15:57:08 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 13:36:13 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,6 @@
 
 #include "Base.hpp"
 
-class B : public Base
-{
-
-};
+class B : public Base {};
 
 #endif 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 18:36:08 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/16 15:48:26 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 13:36:52 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include <cctype>
 #include <cstdlib>
 #include <cmath>
+#include <typeinfo>
 
 class Base
 {

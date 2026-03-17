@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Serializer.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingstephane <kingstephane@student.42.f    +#+  +:+       +#+        */
+/*   By: stkabang <stkabang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 18:06:33 by kingstephan       #+#    #+#             */
-/*   Updated: 2026/03/11 18:20:36 by kingstephan      ###   ########.fr       */
+/*   Updated: 2026/03/17 12:45:05 by stkabang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define SERIALIZER_HPP
 
 #include <iostream>
-#include <cstdint>
+#include <stdint.h>
 #include <stdint.h>
 
 struct Data
